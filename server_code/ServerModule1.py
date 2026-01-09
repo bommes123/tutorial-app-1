@@ -1,5 +1,13 @@
 import anvil.server
 
+# Aufruf der Pi-Funktion
+print(anvil.server.call('hallo', 'Dietmar'))  # => "Hallo Dietmar vom Raspberry Pi!"
+print(anvil.server.call('addiere', 5, 7))     # => 12
+
+# Wenn LED-Funktionen aktiviert
+# anvil.server.call('led_an')
+# anvil.server.call('led_aus')
+
 # This is a server module. It runs on the Anvil server,
 # rather than in the user's browser.
 #
